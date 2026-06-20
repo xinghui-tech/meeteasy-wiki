@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# VitePress build & cache
+src/.vitepress/dist/
+src/.vitepress/cache/
+src/.vitepress/.temp/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# pnpm
+.pnpm-store/
+
+.vitepress/cache/
+.vitepress/dist/
