@@ -275,7 +275,7 @@ export default withMermaid(
     theme: 'base',
     themeVariables: {
       primaryColor: '#FF6A00',
-      primaryTextColor: '#333333',
+      primaryTextColor: '#FFFFFF',
       primaryBorderColor: '#e55f00',
       lineColor: '#969799',
       secondaryColor: '#f7f8fa',
