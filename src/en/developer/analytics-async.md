@@ -70,7 +70,7 @@ Share tracking uses URL parameters to build attribution chains:
 ### Flow
 
 1. User A shares a conference link → SDK generates `share_code_A`
-2. Link format: `https://meetapp.example.com/conf/abc?_s=share_code_A`
+2. Link format: `https://m-app.xinghui.club/conf/abc?_s=share_code_A`
 3. User B opens the link → SDK records `share_open` with `share_code_A`
 4. User B shares to User C → SDK generates `share_code_B` linked to `share_code_A`
 5. User C registers → conversion attributed to both A and B

@@ -39,7 +39,7 @@ The mini program (WeApp or WeConsole) uses WeChat's native login:
 The mini program opens the H5 page in a WebView with the ticket as a URL parameter:
 
 ```
-https://meetapp.example.com/conference/abc123?login_ticket=TICKET_VALUE&_t=1700000000
+https://m-app.xinghui.club/conference/abc123?login_ticket=TICKET_VALUE&_t=1700000000
 ```
 
 | Parameter | Purpose |

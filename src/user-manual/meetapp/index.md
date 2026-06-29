@@ -5,7 +5,7 @@
 ## 如何访问会议
 
 1. 打开组织者分享的 **会议链接** 或 **扫描二维码**。
-2. 链接格式通常为 `https://<域名>/meetapp/<tenant>/<conference-slug>/`（以实际部署为准）。
+2. 链接格式通常为 `https://m-app.xinghui.club/meetapp/<tenant>/<conference-slug>/`（以实际部署为准）。
 3. 微信小程序用户可通过 **WeApp** 打开同一 H5 页面。
 
 ![MeetApp 会议首页](/images/placeholder.svg)

@@ -6,7 +6,7 @@ The **Admin** portal is MeetEasy's platform operations console. Platform operato
 
 - A super-admin or platform operator account assigned by MeetEasy
 - Desktop browser (Chrome, Firefox, Safari, or Edge recommended)
-- Admin portal URL provided by your deployment **[TBD]**
+- Admin portal URL: https://m-admin.xinghui.club
 
 ## Sign In
 

@@ -5,7 +5,7 @@
 ## 前置条件
 
 - 已由平台 Admin 创建租户账号
-- 使用租户管理员或组织者账号登录 Console（Web 或 WeConsole 小程序）
+- 使用租户管理员或组织者账号登录 Console（Web端：https://m-console.xinghui.club 或 WeConsole 小程序）
 
 ## 步骤一：创建会议
 

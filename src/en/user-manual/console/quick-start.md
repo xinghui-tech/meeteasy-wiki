@@ -5,7 +5,7 @@ This guide walks conference organizers through creating and publishing their fir
 ## Prerequisites
 
 - Organizer account with access to your organization's tenant
-- Console URL or WeConsole mini program
+- Console URL (https://m-console.xinghui.club) or WeConsole mini program
 - Basic event details ready: name, dates, venue
 
 ## Step 1: Sign In
