@@ -1,6 +1,6 @@
 # 分析与异步处理
 
-会易小蜜书将 **访问分析** 与 **耗时任务** 解耦：前端 SDK 批量上报 → Redis 队列 → FastStream Worker 聚合 → Console/Admin 查询；实时场景配合 Socket.IO 推送。
+星汇小蜜书将 **访问分析** 与 **耗时任务** 解耦：前端 SDK 批量上报 → Redis 队列 → FastStream Worker 聚合 → Console/Admin 查询；实时场景配合 Socket.IO 推送。
 
 ## 分析事件流
 

@@ -5,7 +5,7 @@ const companyZh = '星汇盛世（北京）科技有限公司'
 const companyEn = 'Xinghui Shengshi (Beijing) Technology Co., Ltd.'
 
 const footerZh = {
-  message: `${companyZh} · 会易小蜜书文档`,
+  message: `${companyZh} · 星汇小蜜书文档`,
   copyright: 'Copyright © 2026 星汇盛世（北京）科技有限公司',
 }
 
@@ -228,10 +228,48 @@ function aboutSidebar(lang: 'zh' | 'en') {
       ]
 }
 
+function visuspaceSidebar(lang: 'zh' | 'en') {
+  const p = lang === 'zh' ? '' : '/en'
+  return lang === 'zh'
+    ? [
+        { text: 'VisuSpace 概览', link: `${p}/visuspace/` },
+        {
+          text: '组件与实例说明',
+          link: `${p}/visuspace/components`,
+          collapsed: false,
+          items: [
+            { text: '布局组件', link: `${p}/visuspace/components#布局组件-layout-components` },
+            { text: '基础与媒体组件', link: `${p}/visuspace/components#基础与媒体组件-static-media-components` },
+            { text: '业务组件', link: `${p}/visuspace/components#业务组件-business-components` },
+            { text: 'AI会务Chatbox', link: `${p}/visuspace/components#ai-会务-chatbox-business-ai-chatbox` },
+            { text: '列表与详情组件', link: `${p}/visuspace/components#数据列表与详情组件-list-detail-catalog` },
+          ]
+        },
+        { text: '从0到1创建会务助理', link: `${p}/visuspace/create-assistant` },
+      ]
+    : [
+        { text: 'VisuSpace Overview', link: `${p}/visuspace/` },
+        {
+          text: 'Components & Examples',
+          link: `${p}/visuspace/components`,
+          collapsed: false,
+          items: [
+            { text: 'Layout Components', link: `${p}/visuspace/components#layout-components` },
+            { text: 'Static & Media Components', link: `${p}/visuspace/components#static-media-components` },
+            { text: 'Business Components', link: `${p}/visuspace/components#business-components` },
+            { text: 'AI Conference Chatbox', link: `${p}/visuspace/components#ai-conference-chatbox-business-ai-chatbox` },
+            { text: 'Catalog List & Details', link: `${p}/visuspace/components#catalog-list-details` },
+          ]
+        },
+        { text: 'Create Assistant from 0 to 1', link: `${p}/visuspace/create-assistant` },
+      ]
+}
+
 export default withMermaid(
   defineConfig({
-  title: '会易小蜜书',
-  description: '会易小蜜书（MeetEasy）产品介绍、使用手册与技术文档',
+  base: process.env.GITHUB_ACTIONS ? '/meeteasy-wiki/' : '/',
+  title: '星汇小蜜书',
+  description: '星汇小蜜书（MeetEasy）产品介绍、使用手册与开发文档',
   appearance: true,
   mermaid: {
     theme: 'base',
@@ -244,24 +282,46 @@ export default withMermaid(
       tertiaryColor: '#fff8f0',
     },
   },
+  vite: {
+    optimizeDeps: {
+      include: [
+        'mermaid',
+        '@braintree/sanitize-url'
+      ]
+    }
+  },
   locales: {
     root: {
       label: '简体中文',
       lang: 'zh-CN',
-      title: '会易小蜜书',
-      description: '会易小蜜书（MeetEasy）产品介绍、使用手册与技术文档',
+      title: '星汇小蜜书',
+      description: '星汇小蜜书（MeetEasy）产品介绍、使用手册与开发文档',
       themeConfig: {
         logo: '/images/logo.png',
-        siteTitle: '会易小蜜书',
+        siteTitle: '星汇小蜜书',
+        outline: {
+          label: '本页目录',
+        },
+        docFooter: {
+          prev: '上一页',
+          next: '下一页',
+        },
+        sidebarMenuLabel: '菜单',
+        returnToTopLabel: '回到顶部',
+        darkModeSwitchLabel: '主题外观',
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
         nav: [
           { text: '产品介绍', link: '/product/', activeMatch: '/product/' },
+          { text: 'VisuSpace AI低代码', link: '/visuspace/', activeMatch: '/visuspace/' },
           { text: '使用手册', link: '/user-manual/admin/', activeMatch: '/user-manual/' },
-          { text: '技术文档', link: '/developer/architecture', activeMatch: '/developer/' },
+          { text: '开发文档', link: '/developer/architecture', activeMatch: '/developer/' },
           { text: '法律法规', link: '/legal/', activeMatch: '/legal/' },
           { text: '关于我们', link: '/about/', activeMatch: '/about/' },
         ],
         sidebar: {
           '/product/': productSidebar('zh'),
+          '/visuspace/': visuspaceSidebar('zh'),
           '/user-manual/': userManualSidebar('zh'),
           '/developer/': developerSidebar('zh'),
           '/legal/': legalSidebar('zh'),
@@ -284,8 +344,21 @@ export default withMermaid(
       themeConfig: {
         logo: '/images/logo.png',
         siteTitle: 'MeetEasy',
+        outline: {
+          label: 'On this page',
+        },
+        docFooter: {
+          prev: 'Previous page',
+          next: 'Next page',
+        },
+        sidebarMenuLabel: 'Menu',
+        returnToTopLabel: 'Return to top',
+        darkModeSwitchLabel: 'Appearance',
+        lightModeSwitchTitle: 'Switch to light theme',
+        darkModeSwitchTitle: 'Switch to dark theme',
         nav: [
           { text: 'Product', link: '/en/product/', activeMatch: '/en/product/' },
+          { text: 'VisuSpace AI Low-code', link: '/en/visuspace/', activeMatch: '/en/visuspace/' },
           { text: 'User Manual', link: '/en/user-manual/admin/', activeMatch: '/en/user-manual/' },
           { text: 'Developer', link: '/en/developer/architecture', activeMatch: '/en/developer/' },
           { text: 'Legal', link: '/en/legal/', activeMatch: '/en/legal/' },
@@ -293,6 +366,7 @@ export default withMermaid(
         ],
         sidebar: {
           '/en/product/': productSidebar('en'),
+          '/en/visuspace/': visuspaceSidebar('en'),
           '/en/user-manual/': userManualSidebar('en'),
           '/en/developer/': developerSidebar('en'),
           '/en/legal/': legalSidebar('en'),

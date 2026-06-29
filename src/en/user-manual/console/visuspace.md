@@ -49,6 +49,7 @@ Conference-specific widgets bound to your event data:
 - **Speaker grid** — Speaker cards with photos
 - **Forum tabs** — Track-filtered sessions
 - **Registration button** — Links to registration form
+- **AI Chatbox** — Embeddable [AI Conference Chatbox](/en/visuspace/components#4-ai-conference-chatbox-business-ai-chatbox) concierge
 
 ## Build a Homepage
 
@@ -77,6 +78,7 @@ VisuSpace supports AI-assisted page creation:
 1. Click **AI Generate** in the editor.
 2. Describe the page you want (e.g., "A homepage with countdown, speaker highlights, and registration CTA").
 3. Review the generated layout and adjust components as needed.
+4. For details on AI prompts and instructions, see the [Create Assistant from 0 to 1](/en/visuspace/create-assistant) guide.
 
 ## Publish Pages
 

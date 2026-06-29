@@ -1,14 +1,12 @@
-<div class="draft-notice">Draft — pending legal review.</div>
-
 # Privacy Policy
 
-**Effective Date:** [TBD]  
+**Effective Date:** 2026-07-01  
 **Last Updated:** 2026-06-20  
 **Version:** 0.1 (Draft)
 
 ## 1. Introduction
 
-This Privacy Policy describes how **Xinghui Shengshi (Beijing) Technology Co., Ltd.** ("we," "us," or "Company") collects, uses, stores, and protects personal information when you use the **MeetEasy (会易小蜜书) Platform** ("Platform"), including Admin, Console, MeetApp, VisuSpace, and WeChat mini programs (WeApp, WeConsole).
+This Privacy Policy describes how **Xinghui Shengshi (Beijing) Technology Co., Ltd.** ("we," "us," or "Company") collects, uses, stores, and protects personal information when you use the **MeetEasy (星汇小蜜书) Platform** ("Platform"), including Admin, Console, MeetApp, VisuSpace, and WeChat mini programs (WeApp, WeConsole).
 
 By using the Platform, you acknowledge that you have read and understood this Privacy Policy.
 
@@ -17,8 +15,8 @@ By using the Platform, you acknowledge that you have read and understood this Pr
 | Field | Information |
 |-------|-------------|
 | Company | Xinghui Shengshi (Beijing) Technology Co., Ltd. |
-| Registered Address | [TBD] |
-| Privacy Contact | [TBD] |
+| Registered Address | 2026-07-01 |
+| Privacy Contact | 2026-07-01 |
 
 ## 3. Information We Collect
 
@@ -91,11 +89,11 @@ If AI or cloud services involve processing outside mainland China, we implement 
 
 | Data Type | Retention Period |
 |-----------|-----------------|
-| Account data | Duration of account + [TBD] after deletion |
-| Registration data | Duration of conference + [TBD] |
-| Analytics data | [TBD] |
-| AI conversation logs | [TBD] |
-| Log data | [TBD] |
+| Account data | Duration of account + 2026-07-01 after deletion |
+| Registration data | Duration of conference + 2026-07-01 |
+| Analytics data | 2026-07-01 |
+| AI conversation logs | 2026-07-01 |
+| Log data | 2026-07-01 |
 
 ## 8. Your Rights
 
@@ -108,7 +106,7 @@ You have the right to:
 - **Account deletion** — Delete your account through settings or by contacting us
 - **Portability** — Receive your data in a structured format
 
-To exercise these rights, contact: [TBD]. We will respond within [TBD] business days.
+To exercise these rights, contact: 2026-07-01. We will respond within 2026-07-01 business days.
 
 ## 9. Minors
 
@@ -126,7 +124,7 @@ We may update this Privacy Policy from time to time. Material changes will be no
 
 For privacy inquiries or complaints:
 
-- Email: [TBD]
-- Address: [TBD]
+- Email: 2026-07-01
+- Address: 2026-07-01
 
 If you are unsatisfied with our response, you may contact the relevant data protection authority.

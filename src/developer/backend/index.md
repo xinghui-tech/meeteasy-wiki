@@ -1,6 +1,6 @@
 # 后端概览
 
-会易小蜜书后端位于 meeteasy 仓库 `src/backend/meeteasy/`，基于 **FastAPI** + **Beanie (MongoDB)** + **FastStream** + **Socket.IO**。
+星汇小蜜书后端位于 meeteasy 仓库 `src/backend/meeteasy/`，基于 **FastAPI** + **Beanie (MongoDB)** + **FastStream** + **Socket.IO**。
 
 ## 目录结构
 

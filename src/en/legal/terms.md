@@ -1,14 +1,12 @@
-<div class="draft-notice">Draft — pending legal review.</div>
-
 # Terms of Service
 
-**Effective Date:** [TBD]  
+**Effective Date:** 2026-07-01  
 **Last Updated:** 2026-06-20  
 **Version:** 0.1 (Draft)
 
 ## 1. Acceptance of Terms
 
-These Terms of Service ("Terms") govern your access to and use of the **MeetEasy (会易小蜜书) Platform** ("Service"), operated by **Xinghui Shengshi (Beijing) Technology Co., Ltd.** ("Company," "we," "us").
+These Terms of Service ("Terms") govern your access to and use of the **MeetEasy (星汇小蜜书) Platform** ("Service"), operated by **Xinghui Shengshi (Beijing) Technology Co., Ltd.** ("Company," "we," "us").
 
 By registering, logging in, or using the Service, you agree to these Terms. If you do not agree, do not use the Service.
 
@@ -73,7 +71,7 @@ AI-generated content is provided for informational purposes only and may contain
 
 TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COMPANY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING FROM YOUR USE OF THE SERVICE.
 
-OUR TOTAL LIABILITY FOR ANY CLAIMS ARISING FROM THESE TERMS OR THE SERVICE SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR [TBD], WHICHEVER IS GREATER.
+OUR TOTAL LIABILITY FOR ANY CLAIMS ARISING FROM THESE TERMS OR THE SERVICE SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR 2026-07-01, WHICHEVER IS GREATER.
 
 ## 10. Indemnification
 
@@ -90,15 +88,15 @@ You agree to indemnify and hold harmless the Company from claims arising from yo
 
 These Terms are governed by the laws of the People's Republic of China.
 
-Disputes shall first be resolved through good-faith negotiation. If unresolved within [TBD] days, disputes shall be submitted to the competent court at [TBD].
+Disputes shall first be resolved through good-faith negotiation. If unresolved within 2026-07-01 days, disputes shall be submitted to the competent court at 2026-07-01.
 
 ## 13. Changes to Terms
 
-We may modify these Terms at any time. Material changes will be notified via the Platform or email at least [TBD] days before taking effect. Continued use constitutes acceptance.
+We may modify these Terms at any time. Material changes will be notified via the Platform or email at least 2026-07-01 days before taking effect. Continued use constitutes acceptance.
 
 ## 14. Contact
 
 For questions about these Terms:
 
-- Email: [TBD]
-- Address: [TBD]
+- Email: 2026-07-01
+- Address: 2026-07-01

@@ -1,8 +1,6 @@
-<div class="draft-notice">Draft — pending legal review.</div>
-
 # Legal Documents
 
-This section contains the legal policies governing use of the **MeetEasy (会易小蜜书) Platform**, operated by **Xinghui Shengshi (Beijing) Technology Co., Ltd.**
+This section contains the legal policies governing use of the **MeetEasy (星汇小蜜书) Platform**, operated by **Xinghui Shengshi (Beijing) Technology Co., Ltd.**
 
 ## Document Index
 
@@ -32,15 +30,15 @@ These policies apply to all MeetEasy platform surfaces:
 ## Data Controller
 
 **Xinghui Shengshi (Beijing) Technology Co., Ltd.**  
-Unified Social Credit Code: [TBD]  
-Registered Address: [TBD]
+Unified Social Credit Code: 2026-07-01  
+Registered Address: 2026-07-01
 
 ## Contact
 
 For legal inquiries, privacy requests, or compliance questions:
 
-- Privacy: [TBD]
-- Legal: [TBD]
+- Privacy: 2026-07-01
+- Legal: 2026-07-01
 
 ## Version History
 

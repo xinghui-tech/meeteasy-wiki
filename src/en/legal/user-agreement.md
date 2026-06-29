@@ -1,14 +1,12 @@
-<div class="draft-notice">Draft — pending legal review.</div>
-
 # User Agreement
 
-**Effective Date:** [TBD]  
+**Effective Date:** 2026-07-01  
 **Last Updated:** 2026-06-20  
 **Version:** 0.1 (Draft)
 
 ## 1. Agreement Acceptance
 
-This User Agreement ("Agreement") is a binding contract between you ("User") and **Xinghui Shengshi (Beijing) Technology Co., Ltd.** ("Company") regarding your use of the **MeetEasy (会易小蜜书) Platform** ("Platform").
+This User Agreement ("Agreement") is a binding contract between you ("User") and **Xinghui Shengshi (Beijing) Technology Co., Ltd.** ("Company") regarding your use of the **MeetEasy (星汇小蜜书) Platform** ("Platform").
 
 By registering an account, logging in, or using any Platform feature, you confirm that you have read, understood, and agree to this Agreement, our [Terms of Service](./terms), and [Privacy Policy](./privacy).
 
@@ -25,7 +23,7 @@ By registering an account, logging in, or using any Platform feature, you confir
 - You are solely responsible for all activities under your account
 - Do not share your login credentials with others
 - Use a strong, unique password
-- Report suspected unauthorized access immediately to [TBD]
+- Report suspected unauthorized access immediately to 2026-07-01
 
 ### 2.3 Account Types
 
@@ -86,7 +84,7 @@ The Platform's AI assistant generates responses using large language models. You
 ### 6.1 By You
 
 - Delete your account through Platform settings
-- Contact [TBD] to request account deletion
+- Contact 2026-07-01 to request account deletion
 - Upon deletion, personal data is handled per the Privacy Policy retention schedule
 
 ### 6.2 By Us
@@ -114,5 +112,5 @@ We may revise this Agreement. Changes will be communicated via Platform notifica
 
 For questions about this Agreement:
 
-- Email: [TBD]
-- Address: [TBD]
+- Email: 2026-07-01
+- Address: 2026-07-01

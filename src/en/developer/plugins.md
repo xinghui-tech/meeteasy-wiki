@@ -148,6 +148,26 @@ curl -X POST http://localhost:9000/plugin/execute \
 - Design for idempotency — events may be retried
 - Never log sensitive data (API keys, PII)
 
+## AI Compute Worker
+
+When developing heavy Embedded plugins (such as local OCR and ASR speech-to-text engines), loading large machine learning models (like PaddleOCR, FunASR, or Whisper) directly into the API Server worker processes causes slow boot times, massive memory multiplication, and API latency spikes.
+
+To isolate compute-heavy AI tasks, MeetEasy supports an **AI Compute Worker** architecture:
+
+### Execution Modes
+Compute-heavy plugins delegate operations transparently over an internal HTTP RPC interface to a dedicated worker.
+* **Embedded Mode (`embedded`)**: Default development mode. Plugins run in-process with the API server.
+* **Remote Mode (`remote`)**: Production mode. Heavy plugins use `RemoteOCRProxy` and `RemoteASRProxy` to route processing calls to the AI worker process.
+* **Hybrid Mode (`hybrid`)**: Decides execution location dynamically based on the plugin's metadata configuration (`execution.mode` in `plugin.json`).
+
+### Environment Variables
+Configure the AI Worker using the following environment variables:
+* `MEETEASY_ROLE` — Set to `ai-worker` to boot the application as a single-worker ML runner.
+* `AI_PLUGIN_EXECUTION_MODE` — Options: `embedded`, `remote`, `hybrid`.
+* `AI_WORKER_URL` — Internal HTTP endpoint of the AI worker (defaults to `http://127.0.0.1:8100`).
+
+For the implementation details, consult the `docs/ai_compute_worker.md` architecture document in the repository.
+
 ## Reference
 
 See the Plugin Development Guide in the meeteasy repository:

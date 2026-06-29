@@ -44,12 +44,12 @@ The technical section SHALL document the plugin system including embedded vs sid
 
 ### Requirement: VisuSpace DSL reference summary
 
-The technical section SHALL include a VisuSpace DSL overview (VisuSite, VisuPage, component categories, variables, actions) with a link to the authoritative `DSL_SPEC.md` in the meeteasy repository.
+The technical section SHALL include a complete VisuSpace low-code JSON DSL specification directly (merged from the source documents) to support independent wiki site operations without external repository links.
 
 #### Scenario: Developer learns VisuSpace DSL
 
 - **WHEN** a developer reads the VisuSpace DSL page
-- **THEN** they see the top-level data model, common component types, and variable interpolation syntax, with pointer to full specification
+- **THEN** they see the complete data model, component specifications, variable interpolation, and other schema details directly integrated in the wiki page
 
 ### Requirement: Deployment and operations guide
 

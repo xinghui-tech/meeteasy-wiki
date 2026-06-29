@@ -25,6 +25,11 @@ graph TB
         Socket[Socket.IO Server]
     end
 
+    subgraph AI_Compute [AI Compute Layer]
+        AIWorker[AI Compute Worker]
+        MLModels[Local ML Models PaddleOCR/FunASR]
+    end
+
     subgraph Data
         MongoDB[(MongoDB)]
         Redis[(Redis)]
@@ -53,6 +58,11 @@ graph TB
     API --> LLM
     API --> ASR
     API --> Sidecar
+
+    %% AI Compute Worker integrations
+    API -->|HTTP RPC| AIWorker
+    Worker -->|HTTP RPC| AIWorker
+    AIWorker --> MLModels
 
     Worker --> Redis
     Worker --> MongoDB
@@ -84,6 +94,7 @@ All frontends consume the backend via the WebAPI SDK — pages never call HTTP c
 |---------|------|------|
 | API Server | `src/backend/meeteasy` | FastAPI HTTP + Socket.IO endpoints |
 | Worker | `src/backend/meeteasy` (FastStream) | Async background task processing |
+| AI Worker | `src/backend/meeteasy` (AI Host) | Compute-heavy AI task isolation (local OCR, ASR inference) |
 | Plugins | `src/backend/meeteasy/plugins` | Embedded and Sidecar plugin runtime |
 
 ### Backend Layering

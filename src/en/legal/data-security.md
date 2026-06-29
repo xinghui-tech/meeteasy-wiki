@@ -1,14 +1,12 @@
-<div class="draft-notice">Draft — pending legal review.</div>
-
 # Data Security
 
-**Effective Date:** [TBD]  
+**Effective Date:** 2026-07-01  
 **Last Updated:** 2026-06-20  
 **Version:** 0.1 (Draft)
 
 ## 1. Overview
 
-**Xinghui Shengshi (Beijing) Technology Co., Ltd.** ("Company") is committed to protecting the security of data processed through the **MeetEasy (会易小蜜书) Platform** ("Platform"). This document summarizes our security practices and compliance commitments.
+**Xinghui Shengshi (Beijing) Technology Co., Ltd.** ("Company") is committed to protecting the security of data processed through the **MeetEasy (星汇小蜜书) Platform** ("Platform"). This document summarizes our security practices and compliance commitments.
 
 ## 2. Security Governance
 
@@ -37,7 +35,7 @@
 
 - Regular automated database backups
 - Backup encryption and access controls
-- Documented recovery procedures with defined RTO/RPO targets **[TBD]**
+- Documented recovery procedures with defined RTO/RPO targets **2026-07-01**
 - Periodic recovery testing
 
 ## 4. Access Control
@@ -69,7 +67,7 @@
 - Application logs include tenant and user context (without sensitive data)
 - Authentication events logged (login, logout, failed attempts)
 - Anomaly detection for unusual access patterns
-- Log retention per defined policy **[TBD]**
+- Log retention per defined policy **2026-07-01**
 - Sensitive data (tokens, passwords, PII) masked in logs
 
 ## 6. Vulnerability Management
@@ -77,7 +75,7 @@
 - Dependency vulnerability scanning in CI/CD pipeline
 - Security patches applied on a defined schedule
 - Responsible disclosure process for reported vulnerabilities
-- Security report channel: [TBD]
+- Security report channel: 2026-07-01
 
 ## 7. Incident Response
 
@@ -88,7 +86,7 @@ Our incident response process follows four phases:
 3. **Notification** — Notify affected users and authorities as required by law
 4. **Recovery & Review** — Restore services, conduct post-incident review, implement improvements
 
-Incident notification timeline: **[TBD]** per applicable regulatory requirements.
+Incident notification timeline: **2026-07-01** per applicable regulatory requirements.
 
 ## 8. Compliance Commitments
 
@@ -115,14 +113,14 @@ You can help protect your data by:
 - Using strong, unique passwords
 - Not sharing login credentials
 - Logging out on shared devices
-- Reporting suspicious activity to [TBD]
+- Reporting suspicious activity to 2026-07-01
 - Keeping your browser and devices updated
 
 ## 11. Contact
 
 For security inquiries or to report a vulnerability:
 
-- Security team: [TBD]
-- Address: [TBD]
+- Security team: 2026-07-01
+- Address: 2026-07-01
 
-We appreciate responsible disclosure and will acknowledge reports within [TBD] business days.
+We appreciate responsible disclosure and will acknowledge reports within 2026-07-01 business days.

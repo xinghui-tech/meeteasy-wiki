@@ -1,6 +1,6 @@
 # 前端概览
 
-会易小蜜书前端采用 **pnpm workspace Monorepo**，各应用共享 `webapi` SDK 与工具链。
+星汇小蜜书前端采用 **pnpm workspace Monorepo**，各应用共享 `webapi` SDK 与工具链。
 
 ## 仓库结构
 

@@ -62,11 +62,18 @@ server {
 
 将 `src/.vitepress/dist/` 内容上传至服务器 `root` 目录。
 
-### GitHub Pages
+### GitHub Pages (自动部署)
 
+本项目配置了 GitHub Actions 自动部署工作流。当推送代码到 `main` 分支时，工作流会自动执行构建并发布到 GitHub Pages。
+
+**访问地址**：`https://xinghui-tech.github.io/meeteasy-wiki/`
+
+如果需要手动部署或了解工作流配置，请参考 `.github/workflows/deploy.yml`。
+
+#### 本地构建测试
+若要在本地以 GitHub Pages 相同的 subpath 模式构建，请运行：
 ```bash
-pnpm docs:build
-# 将 src/.vitepress/dist 内容推送到 gh-pages 分支
+GITHUB_ACTIONS=true pnpm docs:build
 ```
 
 ## 待确认项（生产部署）

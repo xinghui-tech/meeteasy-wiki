@@ -1,6 +1,6 @@
 # Product Overview
 
-**MeetEasy** (会易小蜜书) is an enterprise-grade, multi-tenant meeting management SaaS platform. It helps organizations plan, run, and measure conferences of any scale — from corporate summits and industry forums to training sessions and hybrid events.
+**MeetEasy** (星汇小蜜书) is an enterprise-grade, multi-tenant meeting management SaaS platform. It helps organizations plan, run, and measure conferences of any scale — from corporate summits and industry forums to training sessions and hybrid events.
 
 ## What MeetEasy Does
 

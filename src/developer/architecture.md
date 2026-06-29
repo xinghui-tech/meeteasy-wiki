@@ -1,6 +1,6 @@
 # 系统架构
 
-本文描述会易小蜜书（MeetEasy）的整体系统拓扑与主要组件职责。内容归纳自 meeteasy 主仓库架构文档，最后更新：2026-06。
+本文描述星汇小蜜书（MeetEasy）的整体系统拓扑与主要组件职责。内容归纳自 meeteasy 主仓库架构文档，最后更新：2026-06。
 
 ## 系统拓扑
 
@@ -24,6 +24,11 @@ flowchart TB
         Worker[FastStream Worker]
         SIO[Socket.IO]
         Plugins[Embedded / Sidecar 插件]
+    end
+
+    subgraph ai_compute [AI 计算层]
+        AIWorker[AI Compute Worker]
+        MLModels[本地 ML 模型 PaddleOCR/FunASR]
     end
 
     subgraph data [数据与消息]
@@ -56,6 +61,11 @@ flowchart TB
     API --> LLM
     API --> OSS
     Plugins --> LLM
+
+    %% AI Compute Worker integrations
+    API -->|HTTP RPC| AIWorker
+    Worker -->|HTTP RPC| AIWorker
+    AIWorker --> MLModels
 ```
 
 ## 组件说明
@@ -68,6 +78,7 @@ flowchart TB
 | **Socket.IO** | 实时消息、分析推送、在线状态 |
 | **MongoDB** | 主数据：租户、会议、报名、VisuSpace DSL、配置 |
 | **Redis** | 缓存、消息队列、Socket.IO adapter |
+| **AI Compute Worker** | AI 计算协处理器，加载 OCR、ASR 等本地大模型以进行重算力离线推理 |
 | **插件** | 事件驱动扩展 AI、OCR、报名等能力 |
 
 ## 分层架构（后端）

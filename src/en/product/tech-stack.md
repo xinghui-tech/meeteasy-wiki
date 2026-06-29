@@ -48,12 +48,27 @@ All frontend applications share a **pnpm monorepo** workspace:
 - **Nginx** — Reverse proxy, static asset serving, and SSL termination.
 - **Docker Compose** — Local development and optional production deployment.
 
-## AI & Integrations
+## AI & Voice Processing
 
-- **LLM providers** — Configurable per tenant (DeepSeek, OpenAI, and others via plugins).
-- **ASR** — Automatic speech recognition for voice input in the AI assistant.
-- **WeChat** — Mini program login, share, and WebView embedding.
-- **OCR** — Document and image text extraction via plugin.
+MeetEasy provides a flexible hybrid architecture for AI and voice processing, supporting both local isolated inference (via AI Compute Worker) and external cloud SaaS APIs:
+
+### OCR (Optical Character Recognition)
+* **Local/Offline Inference**: Powered by the **PaddleOCR** engine. To save memory and prevent API latency spikes, the models are loaded inside the isolated `ai-worker` process.
+* **Cloud API Support**: Pre-integrated with Alibaba **Qwen-VL** and Baidu Cloud OCR services.
+* **Key Use Cases**: Automatic text extraction from conference handbooks or schedule images to auto-populate agenda and speaker databases.
+
+### ASR (Automatic Speech Recognition)
+* **Local/Offline Inference**: Built on Alibaba's **FunASR** framework (e.g., Paraformer) and OpenAI's **Whisper** architecture, providing high-precision Chinese/English speech-to-text. Runs inside the isolated `ai-worker`.
+* **Cloud API Support**: Integrates Alibaba Cloud ASR, Baidu ASR, and other mainstream speech APIs.
+* **Key Use Cases**: Speech-to-text input inside the MeetApp AI Chatbox to support natural voice commands and hands-free operations.
+
+### LLM & Page-Generation Agent
+* **Large Language Models**: Supports tenant-configurable routing to DeepSeek, OpenAI, and other providers via the plugin system.
+* **VisuSpace AI**: A specialized page-generation agent that takes natural language prompts and outputs standardized VisuSpace JSON DSL configurations.
+
+### WeChat Integration
+* **Platforms**: WeChat Mini Program (WeApp for attendees, WeConsole for organizers).
+* **Key Features**: WeChat login, Single Sign-On (SSO) ticket exchange, QR code scanning, and card sharing.
 
 ## Why These Choices
 

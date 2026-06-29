@@ -1,6 +1,6 @@
 # AMIS 表单设计与发布
 
-会易小蜜书使用 **AMIS** 低代码 schema 驱动报名与调研表单，组织者在 Console 设计，MeetApp 渲染提交。
+星汇小蜜书使用 **AMIS** 低代码 schema 驱动报名与调研表单，组织者在 Console 设计，MeetApp 渲染提交。
 
 ## 进入表单设计器
 

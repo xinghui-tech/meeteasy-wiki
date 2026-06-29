@@ -1,6 +1,6 @@
 # About MeetEasy
 
-**MeetEasy** (会易小蜜书) is an enterprise meeting management SaaS platform developed by **Xinghui Shengshi (Beijing) Technology Co., Ltd.** We help organizations of all sizes plan, execute, and measure conferences — from registration to on-site engagement and post-event analytics.
+**MeetEasy** (星汇小蜜书) is an enterprise meeting management SaaS platform developed by **Xinghui Shengshi (Beijing) Technology Co., Ltd.** We help organizations of all sizes plan, execute, and measure conferences — from registration to on-site engagement and post-event analytics.
 
 ## The Problem
 

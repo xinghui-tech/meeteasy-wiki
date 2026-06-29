@@ -1,6 +1,6 @@
 # 插件开发
 
-会易小蜜书通过插件系统扩展 AI、OCR、报名等能力，支持 **Embedded（Python）** 与 **Sidecar（HTTP）** 两种模式。
+星汇小蜜书通过插件系统扩展 AI、OCR、报名等能力，支持 **Embedded（Python）** 与 **Sidecar（HTTP）** 两种模式。
 
 ## 架构角色
 
@@ -73,6 +73,25 @@ pytest tests/test_plugins.py   # 如有
 ```
 
 生产发布：Embedded 随 API 镜像滚动；Sidecar 独立部署并更新 Admin 中的 endpoint。
+
+## AI 计算协处理器 (AI Compute Worker)
+
+在开发重资源、消耗硬件性能的 Embedded 插件（如 OCR、ASR 语音识别）时，如果将机器学习模型（如 PaddleOCR、FunASR/Whisper）直接加载在 API Server 进程中，会导致服务器冷启动慢、内存消耗成倍增长以及 API 响应抖动。
+
+为了隔离这种大算力、高占用的 AI 运算，星汇小蜜书支持配置 **AI 计算协处理器（AI Compute Worker）** 架构：
+
+### 架构模型
+当启用时，重资源插件通过内部 RPC（HTTP）协议，透明地路由到独立的 AI Worker 进程。
+* **开发模式 (embedded)**：所有插件直接在 API 进程中内联（Embedded）运行，方便调试。
+* **生产模式 (remote)**：大模型插件通过 `RemoteOCRProxy` 和 `RemoteASRProxy` 代理类，将运算转发给 `ai-worker` 进程执行。
+
+### 核心参数配置
+AI Compute Worker 通过以下环境变量配置：
+* `MEETEASY_ROLE`：配置为 `ai-worker` 将进程启动为计算协处理器角色（单进程单例运行，仅加载一份 ML 模型）。
+* `AI_PLUGIN_EXECUTION_MODE`：`embedded` (本地嵌入) / `remote` (远程计算) / `hybrid` (混合模式)。
+* `AI_WORKER_URL`：API 访问 AI Worker 的内部 HTTP 端点（默认 `http://127.0.0.1:8100`）。
+
+详细设计方案见源码中的 `docs/ai_compute_worker.md` 设计文档。
 
 ## 参考
 
