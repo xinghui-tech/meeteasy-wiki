@@ -27,7 +27,12 @@ The wiki repository SHALL contain a VitePress documentation site with root-level
 
 ### Requirement: Site navigation structure
 
-The site SHALL provide top-level navigation with five modules: Product Overview, User Manual, Technical Documentation, Legal, and About Us, each with dedicated sidebar sections. The site footer SHALL include quick links to key legal and about pages.
+The site SHALL provide top-level navigation with six modules: Homepage, Product Overview, User Manual, Technical Documentation, Legal, and About Us, each with dedicated sidebar sections. The site footer SHALL include quick links to key legal and about pages.
+
+#### Scenario: User navigates to homepage
+
+- **WHEN** a visitor clicks "首页" / "Home" in the top navigation
+- **THEN** they are taken to the homepage of the site in the current locale
 
 #### Scenario: User navigates product section
 

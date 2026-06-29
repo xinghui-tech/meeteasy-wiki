@@ -312,6 +312,7 @@ export default withMermaid(
         lightModeSwitchTitle: '切换到浅色模式',
         darkModeSwitchTitle: '切换到深色模式',
         nav: [
+          { text: '首页', link: '/', activeMatch: '^/$' },
           { text: '产品介绍', link: '/product/', activeMatch: '/product/' },
           { text: 'VisuSpace AI低代码', link: '/visuspace/', activeMatch: '/visuspace/' },
           { text: '使用手册', link: '/user-manual/admin/', activeMatch: '/user-manual/' },
@@ -357,6 +358,7 @@ export default withMermaid(
         lightModeSwitchTitle: 'Switch to light theme',
         darkModeSwitchTitle: 'Switch to dark theme',
         nav: [
+          { text: 'Home', link: '/en/', activeMatch: '^/en/$' },
           { text: 'Product', link: '/en/product/', activeMatch: '/en/product/' },
           { text: 'VisuSpace AI Low-code', link: '/en/visuspace/', activeMatch: '/en/visuspace/' },
           { text: 'User Manual', link: '/en/user-manual/admin/', activeMatch: '/en/user-manual/' },
