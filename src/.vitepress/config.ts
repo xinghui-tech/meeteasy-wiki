@@ -267,7 +267,7 @@ function visuspaceSidebar(lang: 'zh' | 'en') {
 
 export default withMermaid(
   defineConfig({
-  base: process.env.GITHUB_ACTIONS ? '/meeteasy-wiki/' : '/',
+  base: '/',
   title: '星汇小蜜书',
   description: '星汇小蜜书（MeetEasy）产品介绍、使用手册与开发文档',
   appearance: true,

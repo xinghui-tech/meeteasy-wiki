@@ -66,22 +66,16 @@ server {
 
 本项目配置了 GitHub Actions 自动部署工作流。当推送代码到 `main` 分支时，工作流会自动执行构建并发布到 GitHub Pages。
 
-**访问地址**：`https://xinghui-tech.github.io/meeteasy-wiki/`
+**访问地址**：`http://meeting.xinghui.club`
 
 如果需要手动部署或了解工作流配置，请参考 `.github/workflows/deploy.yml`。
-
-#### 本地构建测试
-若要在本地以 GitHub Pages 相同的 subpath 模式构建，请运行：
-```bash
-GITHUB_ACTIONS=true pnpm docs:build
-```
 
 ## 待确认项（生产部署）
 
 | 项目 | 状态 |
 |------|------|
-| 生产域名 | `[待确认]` 如 `docs.meeteasy.com` |
-| 部署路径 | `[待确认]` 根路径 `/` 或子路径 `/wiki/` |
+| 生产域名 | `[已确认]` `meeting.xinghui.club` |
+| 部署路径 | `[已确认]` 根路径 `/` |
 | 法务审核 | 法律法规页面为草稿，发布前需法务确认 |
 | 联系信息 | 见 `src/zh/PENDING_LEGAL_REVIEW.md` |
 
