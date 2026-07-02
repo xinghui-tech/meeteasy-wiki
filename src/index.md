@@ -10,6 +10,9 @@ hero:
     alt: 星汇小蜜书 Logo
   actions:
     - theme: brand
+      text: 快速创建会务助理
+      link: https://m-console.xinghui.club
+    - theme: brand
       text: 产品介绍
       link: /product/
     - theme: alt
@@ -57,6 +60,7 @@ features:
 
 | 模块 | 适合读者 | 入口 |
 |------|----------|------|
+| [快速创建会务助理](https://m-console.xinghui.club) | 会务组织者 | 登录 Console，创建会议、配置微站与 AI 助手 |
 | [产品介绍](/product/) | 决策者、新用户 | 产品定位、功能矩阵、架构原则 |
 | [使用手册](/user-manual/admin/) | 运营、组织者、参会者 | Admin / Console / MeetApp / 微信小程序 |
 | [开发文档](/developer/architecture) | 开发者、运维 | 架构、后端/前端开发、部署 |

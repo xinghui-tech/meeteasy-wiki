@@ -10,6 +10,9 @@ hero:
     alt: MeetEasy logo
   actions:
     - theme: brand
+      text: Create Conference Assistant
+      link: https://m-console.xinghui.club
+    - theme: brand
       text: Product Overview
       link: /en/product/
     - theme: alt
@@ -51,6 +54,7 @@ MeetEasy is a pioneering **2B2C** smart conference SaaS platform built around th
 
 | Module | Audience | Start here |
 |--------|----------|------------|
+| [Create Conference Assistant](https://m-console.xinghui.club) | Organizers | Log in to Console to create events, microsites, and AI assistants |
 | [Product](/en/product/) | Decision makers, new users | Positioning, features, applications |
 | [User Manual](/en/user-manual/admin/) | Admins, organizers, attendees | Role-based guides for every surface |
 | [Developer](/en/developer/architecture) | Engineers, DevOps | Architecture, setup, deployment |
